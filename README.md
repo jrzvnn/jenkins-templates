@@ -20,7 +20,7 @@ cd docker
 ```
 3. Build the Jenkins BlueOcean Docker Image:
 ```sh
-docker build -t myjenkins-blueocean:2.414.1-1 .
+docker build -t myjenkins-blueocean:2.414.1-2 .
 ```
 4. Run the Jenkins BlueOcean container using the following command:
 ```sh
@@ -36,7 +36,7 @@ docker run \
   --publish 50000:50000 \
   --volume jenkins-data:/var/jenkins_home \
   --volume jenkins-docker-certs:/certs/client:ro \
-  myjenkins-blueocean:2.414.1-1
+  myjenkins-blueocean:2.414.2-1
 ```
 5. Get the initial admin password:
 ```sh
